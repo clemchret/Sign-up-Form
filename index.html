@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form | Chrétien Clément</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <script defer src="scripts/font-awesome/all.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <div class="card">
+        <h1>Sign Up</h1>
+        <form id="creationForm" action="/action_page.php" method="post">
+            <label for="email">Email*</label>
+            <input class=" invalid" name="email" type="email" placeholder="someone@example.com" required><i class="fa-solid fa-circle-xmark"></i>
+
+            <label for="psw">Password*</label>
+            <input class="valid" name="psw" type="password" placeholder="Create password" required><i class="fa-solid fa-circle-check"></i>
+
+            <label for="remember">Show Password</label>
+            <input name="remember" type="checkbox">
+
+            <div class="password-req">
+                <p>Your password must contain at least:</p>
+                <ul>
+                    <li>8 characters <i class="fa-solid fa-check"></i></li>
+                    <li>Une majuscule <i class="fa-solid fa-xmark"></i></li>
+                    <li>A Special character</li>
+                    <li>A number</li>
+                </ul>
+            </div>
+            
+            <label for="pswconf">Password Confirmation*</label>
+            <input name="pswconf" type="password" placeholder="Confirm password" required>
+
+            <label for="remember">Remeber Me</label>
+            <input name="remember" type="checkbox">
+
+            <p>By creating an account you agree to our Terms & Privacy.</p>
+
+            <button type="submit">Create Account</button>
+        </form>
+        <h2>or use Google / Facebook</h2>
+    </div>
+    
+</body>
+</html>
